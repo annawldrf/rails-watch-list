@@ -1,0 +1,17 @@
+<div class="container" margin=15px padding=20px>
+<div class=row>
+<h1><%= @list.name%></h1>
+<br>
+</div>
+<%# <%= link_to 'Edit', edit_list_path(@list) %>
+<%= link_to 'Back', lists_path %> |
+
+<ul>
+    <% @list.bookmarks.each do |f| %>
+      <li>
+        <h3>Bookmark: <%= f.comment %></h3>
+        <h3>Movies: <%= f.movie_id %></h3>
+      </li>
+    <% end %>
+  </ul>
+</div>

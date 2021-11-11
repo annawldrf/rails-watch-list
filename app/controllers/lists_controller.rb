@@ -9,7 +9,7 @@ class ListsController < ApplicationController
   end
 
   def new
-    @list = list.new
+    @list = List.new
   end
 
   def create

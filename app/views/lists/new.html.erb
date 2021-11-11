@@ -1,0 +1,9 @@
+<h2>Create your personal Movie List:</h2>
+
+<% form_for(@list) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+
+<p><%= link_to "Back to Overview.", lists_path %></p>
