@@ -1,6 +1,6 @@
 <h2>Create your personal Movie List:</h2>
 
-<% form_for(@list) do |f| %>
+<%= simple_form_for(@list) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <%= f.submit %>
